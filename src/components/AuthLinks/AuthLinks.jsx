@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./authLinks.module.css";
 import { useState } from "react";
+import Image from "next/image";
 
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
@@ -22,11 +23,17 @@ const AuthLinks = () => {
           <span className={styles.link}>Logout</span>
         </>
       )}
-      <div className={styles.burger} onClick={() => setOpen(!open)}>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-      </div>
+      {open ? (
+        <div className={styles.burger} onClick={() => setOpen(!open)}>
+          <Image src="/cancel.png" alt="" width={30} height={30}/>
+        </div>
+      ) : (
+        <div className={styles.burger} onClick={() => setOpen(!open)}>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+        </div>
+      )}
       {open && (
         <div className={styles.responsiveMenu}>
           <Link href="/">Homepage</Link>
