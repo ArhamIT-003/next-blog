@@ -45,3 +45,56 @@
   width: max-content;
   padding: 2px;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    gap: 20px;
+  }
+  .imgContainer {
+    height: 250px;
+  }
+  .textContainer {
+    gap: 15px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .desc {
+    font-size: 14px;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .category {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .date {
+    font-size: 12px;
+  }
+  .textContainer {
+    gap: 10px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  .link {
+    font-size: 12px;
+  }
+  .category {
+    font-size: 12px;
+  }
+}

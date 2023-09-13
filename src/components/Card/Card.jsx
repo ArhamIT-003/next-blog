@@ -15,10 +15,12 @@ const Card = ({ src, text, title, href }) => {
           <span className={styles.category}>culture</span>
         </div>
         <Link href={href}>
-          <h2>{title}</h2>
+          <h2 className={styles.title}>{title}</h2>
         </Link>
         <p className={styles.desc}>{text}</p>
-        <Link href={href} className={styles.link}>Read More</Link>
+        <Link href={href} className={styles.link}>
+          Read More
+        </Link>
       </div>
     </div>
   );
