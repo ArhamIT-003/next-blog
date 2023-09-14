@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 100px;
+  color: #fff;
+  background-color: crimson;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+}
